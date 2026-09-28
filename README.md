@@ -1,29 +1,17 @@
-# Welcome to your Lovable project
+# SozialhilfeInfo
 
-This project was built with [Lovable](https://lovable.dev).
+Site d’information statique bilingue (allemand/français) sur la retraite et les prestations sociales en Allemagne.
 
-## Build with Lovable
+## Publication
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+Déposer les fichiers à la racine d’un dépôt GitHub Pages. Le fichier `CNAME` configure `sozialhilfeinfo.de`.
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+## À compléter avant publication
 
-## Development
+1. Remplacer `49XXXXXXXXXX` dans `js/main.js` par le numéro WhatsApp complet, sans `+` ni espaces.
+2. Remplacer les champs entre crochets dans `impressum.html`, `kontakt.html` et `datenschutz.html`.
+3. Vérifier les repères chiffrés datés dans `leistungen.html` auprès de la Deutsche Rentenversicherung.
+4. Ajouter uniquement les logos autorisés dans `images/partners/` : `unicef.svg`, `un.svg`, `european-commission.svg`.
+5. Faire relire les mentions légales et la déclaration de confidentialité par une personne qualifiée.
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
-```
-
-## Built with
-
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
+Aucune dépendance, aucun CDN, aucun cookie et aucun outil de suivi.
