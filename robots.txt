@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sozialhilfeinfo.de/sitemap.xml
