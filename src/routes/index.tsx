@@ -1,7 +1,9 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, redirect } from "@tanstack/react-router";
 
 export const Route = createFileRoute("/")({
-  component: Index,
+  beforeLoad: () => {
+    throw redirect({ href: "/site/index.html" });
+  },
   head: () => ({
     meta: [
       { title: "SozialhilfeInfo – Rente und soziale Leistungen" },
@@ -24,13 +26,3 @@ export const Route = createFileRoute("/")({
     ],
   }),
 });
-
-function Index() {
-  return (
-    <iframe
-      src="/site/index.html"
-      title="SozialhilfeInfo"
-      className="block h-screen w-full border-0"
-    />
-  );
-}
