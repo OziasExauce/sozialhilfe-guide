@@ -77,16 +77,16 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "SozialhilfeInfo – Rente und soziale Leistungen" },
+      { title: "Sozialhilfeinfo – Rente und soziale Leistungen" },
       {
         name: "description",
         content:
           "Private Informationen zu Rente, Erwerbsminderung, Rehabilitation und Sozialhilfe in Deutschland.",
       },
-      { name: "author", content: "SozialhilfeInfo" },
+      { name: "author", content: "Sozialhilfeinfo" },
       {
         property: "og:title",
-        content: "SozialhilfeInfo – Rente und soziale Leistungen",
+        content: "Sozialhilfeinfo – Rente und soziale Leistungen",
       },
       {
         property: "og:description",

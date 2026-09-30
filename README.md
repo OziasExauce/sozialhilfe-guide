@@ -1,4 +1,4 @@
-# SozialhilfeInfo
+# Sozialhilfeinfo
 
 Site d’information statique bilingue (allemand/français) sur la retraite et les prestations sociales en Allemagne.
 

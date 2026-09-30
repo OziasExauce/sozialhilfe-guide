@@ -6,7 +6,7 @@ export const Route = createFileRoute("/")({
   },
   head: () => ({
     meta: [
-      { title: "SozialhilfeInfo – Rente und soziale Leistungen" },
+      { title: "Sozialhilfeinfo – Rente und soziale Leistungen" },
       {
         name: "description",
         content:
@@ -14,7 +14,7 @@ export const Route = createFileRoute("/")({
       },
       {
         property: "og:title",
-        content: "SozialhilfeInfo – Rente und soziale Leistungen",
+        content: "Sozialhilfeinfo – Rente und soziale Leistungen",
       },
       {
         property: "og:description",
