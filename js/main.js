@@ -37,5 +37,17 @@
     if(image.complete)loaded();
   });
 
+  const form=document.querySelector('[data-contact-form]');
+  if(form){form.addEventListener('submit',function(event){
+    event.preventDefault();
+    const name=form.name.value.trim(),email=form.email.value.trim(),message=form.message.value.trim();
+    const error=form.querySelector('[data-form-error]');
+    const valid=name&&name.length<=100&&/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)&&email.length<=255&&message&&message.length<=2000;
+    error.hidden=!!valid;if(!valid)return;
+    const lang=root.lang==='fr'?'fr':'de';
+    const body=(lang==='fr'?'Nom : ':'Name: ')+name+'\n'+(lang==='fr'?'E-mail : ':'E-Mail: ')+email+'\n\n'+message;
+    window.location.href='mailto:kontakt@sozialhilfeinfo.de?subject='+encodeURIComponent(subjects[lang]+' – '+name)+'&body='+encodeURIComponent(body);
+  });}
+
   const year=document.querySelector('[data-year]');if(year)year.textContent=String(new Date().getFullYear());
 })();
