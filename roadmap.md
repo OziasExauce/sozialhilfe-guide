@@ -4,3 +4,4 @@
 - [x] Ajouter le bouton « Faire une demande de pension » (DE/FR) sur l'accueil, menant à WhatsApp ou e-mail
 - [x] Ajouter ce même bouton à la fin de chaque service sur la page Prestations
 - [x] Vérifier l'aperçu (mobile + ordinateur, DE/FR), aucun bug
+- [x] Corriger définitivement le design absent sur le domaine publié (chemins vers /site/)
