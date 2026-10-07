@@ -5,6 +5,7 @@
   "description": "Static site. Not needed to view it: open index.html. Only used by Lovable publishing.",
   "scripts": {
     "dev": "python3 -m http.server 8080 --bind 0.0.0.0",
-    "build": "node -e \"const f=require('fs');f.rmSync('dist',{recursive:true,force:true});f.mkdirSync('dist');for(const p of ['index.html','leistungen.html','kontakt.html','impressum.html','datenschutz.html','favicon.svg','robots.txt','CNAME','css','js','images','fonts'])if(f.existsSync(p))f.cpSync(p,'dist/'+p,{recursive:true})\""
+    "build": "node -e \"const f=require('fs');f.rmSync('dist',{recursive:true,force:true});f.mkdirSync('dist');for(const p of ['index.html','leistungen.html','kontakt.html','impressum.html','datenschutz.html','favicon.svg','robots.txt','CNAME','css','js','images','fonts'])if(f.existsSync(p))f.cpSync(p,'dist/'+p,{recursive:true})\"",
+    "build:dev": "npm run build"
   }
 }
